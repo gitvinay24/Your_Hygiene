@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Your Hygiene</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">Your Hygiene</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="login-section">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" placeholder="Username" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Login successful (demo)');
+});
+</script>
+</body>
+</html>
